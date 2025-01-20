@@ -15,27 +15,27 @@ function Navbar() {
 
         <ol className="flex items-center justify-center space-x-6 mx-8">
             <li>
-            <button className=" group-hover:text-black">
+            <button className="">
                 Vehicles
             </button>
             </li>
             <li>
-            <button className="group-hover:text-black">
+            <button className="">
                 Energy
             </button>
             </li>
             <li>
-            <button className="group-hover:text-black">
+            <button className="">
                 Charging
             </button>
             </li>
             <li>
-            <button className="group-hover:text-black">
+            <button className="">
                 Discover
             </button>
             </li>
             <li>
-            <button className="group-hover:text-black">
+            <button className="">
                 Shop
             </button>
             </li>
@@ -61,7 +61,7 @@ function Navbar() {
             </a>
             </li>
             <li>
-            <a href="#">
+            <a href="/signin">
                 <img
                 src={person}
                 alt="Person"
