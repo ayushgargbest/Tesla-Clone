@@ -1,16 +1,18 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Components/Navbar';
-import SignIn from './Pages/Auth/Signin';
-import SignUp from './Pages/Auth/SignUp';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import SignIn from "./Pages/Signin";
+import SignUp from "./Pages/SignUp";
+import HomePage from "./Pages/HomePage";
 function App() {
   return (
     <Router>
-      <div className="bg-sky-500 min-h-screen">
-        <Navbar />
+      <Navbar/>      
+      <div>
         <Routes>
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/signin" element={<SignIn/>} />
+          <Route path="/signup" element={<SignUp/>} />
         </Routes>
       </div>
     </Router>
